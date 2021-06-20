@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  rails_dev:
+    build: .
+    container_name: rails_container
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/home/app
